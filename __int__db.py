@@ -14,7 +14,7 @@ class Config:
     #General config
     SECRET_KEY = 'lydia'
     FLASK_APP = 'flask_blog.app'
-    SQALCHEMY_DATABASE_URI = 'mysql+pymysql://lydia:celeste@localhost/co2'
+    SQALCHEMY_DATABASE_URI = 'mysql+pymysql://lydia:celeste@localhost/flask_co2'
     SQALCHEMY_ECHO = False
     SQALCHEMY_TRACK_MODIFICATIONS = False
 

@@ -7,7 +7,7 @@ def create_app():
     app.config.from_object('config.Config')
 
     #TODO this is where the db gets called
-    #from co2.models import db
+    #from flask_co2.models import db
     #db.init_app(app)
 
     with app.app_context():
