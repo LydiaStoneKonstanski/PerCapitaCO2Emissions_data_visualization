@@ -15,7 +15,17 @@ def index():
 def view_instruct():
     return render_template("view_instruct.html")
 
+@app.route("/main_illustration")
+def main_illustration():
+    return render_template("main_illustration.html")
 
+@app.route("/countries")
+def countries():
+    return render_template("countries.html")
+
+@app.route("/attributions")
+def attributions():
+    return render_template("attributions.html")
 
 
 app.run(debug=True)
