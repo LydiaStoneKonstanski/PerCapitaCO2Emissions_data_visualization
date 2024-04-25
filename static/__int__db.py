@@ -45,7 +45,6 @@ my_cursor.execute('USE ???')
 # cur = connection.cursor()
 #my_cursor.execute("INSERT INTO blogposts (title, content) VALUES (%s, %s)",
             ('First Post', 'Content for the first post')
-                  )
 
 mydb.commit()
 # connection.commit()
