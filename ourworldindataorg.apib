@@ -1,0 +1,91 @@
+FORMAT: 1A
+HOST: http://api.ourworldindata.org/v1/
+
+# OurWorldInData.org
+
+This API allows to retreive a subset of data from the Max Roser's OurWorldInData.org web publication. To use this API, you'll need to obtain your API key.
+
+# Group API
+
+## Data [/data{?api_key,variables,entities,from,to}]
+Get data matching criteria in query parameters
+
++ Parameters
+    + api_key (required, string, `xxxx`) ... String representing API key received from us
+    + variables (required, array, `17,19`) ... Array of `ids` of variables for which data should be retrived. See Variables Collection from /variables to get all ids. Has example value.
+    + entities (optional, array, `46,47`) ... Array of `ids` of entities for which data should be retrieved. See Entities Collection from /entities to get all ids. Has example value.
+    + from (optional, string, `1678`) ... String in `YYYY` format, identifying from which year to retrieve data. Has example value.
+    + to (optional, string, `1800`) ... String in `YYYY` format, identifying from which year to retrieve data. Has example value.
+    
+### Retrieves data [GET]
++ Response 200 (application/json)
+
+        {
+            "success": "true",
+            "data": [
+                {
+                    "id": "3905",
+                    "value": "391.3",
+                    "variable": "Household income",
+                    "from": "1700-01-01 00:00:00",
+                    "to": "1799-12-31 00:00:00",
+                    "entityId": "46"
+                }
+            ]
+        }
+
+## Variables Collection [/variables{?api_key}]
+### Lists all variables. [GET]
++ Parameters
+    + api_key (required, string, `xxxx`) ... String representing API key received from us
+
++ Response 200 (application/json)
+
+        {
+            "success": "true",
+            "data": [
+                {
+                    "id": "17",
+                    "name": "Household income",
+                    "unit": "",
+                    "description": "",
+                    "dataset": "Household income",
+                    "datasource": "Household income source",
+                    "type": "Ordinal"
+                },
+                {
+                    "id": "19",
+                    "name": "suicide rate",
+                    "unit": "age-adjusted suicides per 100,000 people",
+                    "description": "",
+                    "dataset": "age-adjusted suicide rates, 1950-2005",
+                    "datasource": "World Health Organization",
+                    "type": "Ordinal"
+                }
+            ]
+        }
+        
+## Entities Collection [/entities{?api_key}]
+### Lists all entities. [GET]
++ Parameters
+    + api_key (required, string, `xxxx`) ... String representing API key received from us
+    
++ Response 200 (application/json)
+
+        {
+            "success": "true",
+            "data": [
+                {
+                    "id": "1",
+                    "code": "GBR",
+                    "name": "United Kingdom",
+                    "type": "Country"
+                },
+                {
+                    "id": "2",
+                    "code": "IRL",
+                    "name": "Ireland",
+                    "type": "Country"
+                }
+            ]
+        }
