@@ -25,6 +25,11 @@
     background-color: #93472f;
 }
 
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
  p {
            font-family: helvetica, sans-serif;
            font-size: 18px;

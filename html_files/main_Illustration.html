@@ -2,26 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>World Co2 Emissions</title>
-
-        <style>
+    <meta name="World CO₂ Emissions" content="A beautiful graph of world co₂ emissions">
+    <title>World CO₂ Emissions</title>
+    <style>
+        h1 {
+        font-size: 3em;
+        text-align: center;
+        }
         body {
+        text-align: center;
         background-color: #ADBBDA;
         color: #3D52A0;
-        margin: 0% 0% 10% 0%;
-       }
-        a {
-        text-decoration: none;
+        margin: 25% 0% 0% 25%;
         }
-
-
-    </style>
+        ul {
+        list-style-type: disc;
+        }
+        ul li {
+        text-align: left;
+        }
+</style>
 </head>
+
 <body>
-<h1>DO STUFF</h1>
+<h1>World CO₂ Emissions</h1>
+<img src="directionsto.svg" alt="Description for image" width="250" height="250">
+<p>This chart illustrates the 20 countries with the highest co₂ emissions per capita and populations equal to or greater than 5 million are pictured. They appear in ranked order by population and gdp.</p>
+<ul>
+    <li>Some countries have a smooth decline in per capita emissions, whereas in others co₂ emissions have yet to find their threshold. Can you make an educated guess why?</li>
+    <li>What happened to emissions in 2020?</li>
+</ul>
+<p>Some nations have puzzling shapes. To explore them in detail, continue to the next chapter:</p>
 <div class="footer">
-    <p><-- Previous Page      Next Page --></p>
-     <button id="Enter" type="button" onclick="window.location.href = 'countries' ; " class="button">Next Page</button>
+     <button id="Previous" type="button" onclick="window.location.href = 'view_instruct'"  class="button">Back to the Legend</button>
+     <button id="Enter" type="button" onclick="window.location.href = 'countries' ; " class="button">Explore Outside Factors:</button>
 </div>
 </body>
 </html>
