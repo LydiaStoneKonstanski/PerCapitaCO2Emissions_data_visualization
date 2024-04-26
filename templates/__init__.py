@@ -10,12 +10,12 @@ def create_app():
 #TODO register all the blueprints from the other files.
     app.register_blueprint()
 
-    from co2.models import db
-    db.init_app(app)
+    # from co2.models import db
+    # db.init_app(app)
 
-    with app.app_context():
-        #add some routes
-#TODO add pathname
-        if not os.path.exists('')
-            db.create_all()
-        return app
+#     with app.app_context():
+#         #add some routes
+# # #TODO add pathname
+# #         if not os.path.exists('')
+# #             # db.create_all()
+# #         return app
