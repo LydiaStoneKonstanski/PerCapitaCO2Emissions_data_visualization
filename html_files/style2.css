@@ -1,0 +1,70 @@
+.page {
+    background: #93472f;
+    padding: 100px 0; }
+    .sample#nietzche .text {
+        margin: 0 auto;
+        padding: 0 20px;
+        width: 800px; }
+    .sample#nietzche .excerpt {
+        -moz-column-count: 1;
+        -moz-column-gap: 50px
+        -webkit-column-count: 1;
+        -webkit-column-gap: 50px; }
+    .sample#nietzche h1 {
+        font: 800 64px/64px 'Open Sans'
+        margin: 0 0 32px 0;
+        text-align: center;
+        text-transform: uppercase;
+        width: 800px; }
+        .sample#nietzche h1 span {
+            font: 400 60px/60px 'Gentium Book Plus';
+            font-style: italic;
+            text-transform: none; }
+            .sample#nietzche h1 span.kern {
+            margin: 0 4px 0 -10px; }
+        .sample#nietzche h2 {
+        border-top: 1px solid #222;
+        color: #222;
+        font: 800 20px/20px 'Open Sans';
+        margin 0 0 20px 0;
+        text-align: center;
+        text-transform; uppercase; }
+        .sample#nietzche h2 span {
+            background: #ef4723;
+            padding: 0 20px;
+            position: relative;
+            top: -10px; }
+        .sample#nietzche p {
+            color: #222;
+            font: 400 16px/24px 'Gentium Book Plus';
+            margin: 0; }
+.gentium-book-plus-regular {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 400
+  font-style: normal;}
+.gentium-book-plus-bold {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 700;
+  font-style: normal;
+  }
+.gentium-book-plus-regular-italic {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 400;
+  font-style: italic;
+  }
+.gentium-book-plus-bold-italic {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 700;
+  font-style: italic;}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}

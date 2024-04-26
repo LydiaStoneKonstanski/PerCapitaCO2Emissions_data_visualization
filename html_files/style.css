@@ -1,0 +1,244 @@
+.attpage {
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 400 16px/24px;
+    color: #222;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom 10%;
+
+    width: 80%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.h1 {
+   font: 800 64px/64px 'Open Sans'
+   margin: 0 0 32px 0;
+   text-align: center;
+   text-transform: uppercase;
+   width: 800px; }
+
+.body {
+    background-color: #93472f;
+}
+
+.header {
+    overflow: hidden;
+    padding: 10px; /* Update padding */
+    width: 100%;
+    background-color: #8bc34a; /* Light green background color */
+    border-bottom: 1px solid black;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #1976d2; /* Blue background color */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: light gray;
+}
+
+.navbar-nav .cog-icon::before {
+    content: "\2699"; /* Unicode character for cog icon */
+    list-style: none; /* Remove bullet point */
+    font-size: 35px; /* Increase icon size */
+}
+
+.content {
+    margin-top: 10px; /* Update margin top */
+    margin-bottom: 10px; /* Update margin bottom */
+}
+
+.errors {
+    border-bottom: 1px solid black;
+    margin-top: 20px; /* Update margin top */
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.subforumtitle {
+    color: blue;
+    font-size: 15px; /* Update font size */
+    font-weight: bold;
+}
+
+.subforumdesc {
+    font-size: 13px; /* Update font size */
+    font-style: italic;
+}
+
+.subforumheader {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.subforumheadertitle {
+    display: inline;
+    font-weight: bold;
+}
+
+.subforumheaderdesc {
+    display: inline;
+}
+
+.subforumheaderlink {
+    font-style: italic;
+    font-size: 12px; /* Update font size */
+    margin-top: 10px; /* Update margin top */
+}
+
+.postinginfo {
+    font-size: 11px; /* Update font size */
+    font-style: italic;
+}
+
+#nolinks {
+    text-decoration: none;
+}
+
+
+
+.toplevelinfo {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.actualpost {
+    padding: 10px; /* Update padding */
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 10px; /* Update margin bottom */
+}
+
+
+
+.whitespace {
+    white-space: pre-line;
+}
+
+.comments {
+    border: 1px solid gray;
+    padding: 10px; /* Update padding */
+    margin-top: 10px; /* Update margin top */
+}
+
+.comment {
+    border-bottom: 1px solid gray;
+}
+
+.commentuser {
+    display: inline;
+    font-weight: bold;
+}
+
+.commentcontent {
+    display: inline;
+}
+
+.commenttime {
+    font-size: 11px; /* Update font size */
+    font-style: italic;
+}
+
+.addcomment {
+    display: none;
+    margin: 0 auto; /* Update margin */
+    text-align: center;
+}
+
+.varwidth {
+    width: 50%;
+}
+
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    max-height: 50%;
+}
+
+.card {
+    margin-bottom: 20px; /* Add some space between cards */
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px 0;
+    position: fixed;
+    width: 30%;
+    text-align: center;
+}
+
+.column-container {
+    background-color: #1a237e; /* Dark blue color */
+    padding: 20px; /* Add padding around the image */
+    text-align: center; /* Center the content horizontally */
+}
+
+.column-container a:hover {
+    color: white;
+}
+
+.blogpost {
+    color: #ffe4f2;
+     font-size: 18px;
+    background: rgb(63,94,251);
+     border-radius: 25px;
+    padding: 1px 10px 10px 15px;
+
+        }
+
+.blogheader {
+    border-radius: 5px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(32,29,253,1) 50%, rgba(252,69,140,0.9472163865546218) 100%);
+    padding: 2px 10px 10px 15px;
+    color: #ffe4f2;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.blog-link{
+    color: #ffe4f2;
+  transition: transform .2s;
+}
+
+.blog-link:hover {
+  transform: scale(1.1);
+}
+
+blog-labal {
+color: #ffe4f2;
+}
+
+.bloginputbox {
+        width: 100%; /* Set the width to 100% */
+        height: 100px; /* Set a fixed height */
+        resize: vertical; /* Allow vertical resizing */
+        overflow-y: auto; /* Enable vertical scrolling */
+        border-radius: 10px;
+        color: black;
+        padding: 1%
+    }
+
+a:hover {
+text decoration:none;
+}
