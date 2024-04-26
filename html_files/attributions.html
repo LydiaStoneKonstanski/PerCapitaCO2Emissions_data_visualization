@@ -36,32 +36,43 @@
             position:center;
             bottom:0px;
             }
+            wrapper {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            margin: 0 auto -142px;
+<!--            the bottom margin is negative value of the footer height-->
+            }
             footer {
+            height: 142px;
+<!--            push must be same height as footer-->
             padding: 50px;
-            text-align: center; }
-            footer p {
-            color: #555;
-            font: 400 16px/1 'open sans';
-            margin: 0 0 2em 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
             }
     </style>
     </head>
 
     <body class="index">
-<!--        <section id="container">-->
-<!--            <section class="samples">-->
-<!--                <section class="sample" id="title">-->
-<!--                    <section class="text">-->
     <h1>Attributions</h1>
     <h2>Many thanks to the journalists and designers who have gone before:</h2>
-    <p><a href=""Our World in Data atta a></p>
-                            <p>Federica att</p>
-                            <p>World Bank</p>
+    <p>Hannah Ritchie, Pablo Rosado and Max Roser (2023) - “CO₂ and Greenhouse Gas Emissions” Published online at OurWorldInData.org.</p>
+    <a href="https://ourworldindata.org/co2-emissions">Our World in Data</a>
+    <p>Federica Fragapane information design (2020) - "Data Visualization and Information Design Create a Visual Model" Published online at Domestika.org.</p>
+    <a href="https://domestika.org/en/courses/2495-data-visualization-and-information-design-create-a-visual-model">Data Visualization and Information Design: Create a Visual Model</a>
+    <p>World Bank (2024) - "Population, total - World", "Gross domestic product 2022" Published online at WorldBank.org</p>
+    <a href="https://data.worldbank.org/indicator/SP.POP.TOTL?locations=1W">World Bank Global Population</a>
+    <a href="https://databankfiles.worldbank.org/public/ddpext_download/GDP.pdf">World Bank Global Population</a>
+    <div class="wrapper">
+        <div class="push"></div>
+    </div>
+    <div class="footer">
+        <button id="Next" type="button" onclick="window.location.href = 'attributions'" class="button">Next</button>
+        <button id="Previous" type="button" onclick="window.location.href = 'attributions'"  class="button">Previous</button>
+    </div>
 
-        <footer>
-            <button id="Next" type="button" onclick="window.location.href = 'attributions'" class="button">Next</button>
-            <button id="Previous" type="button" onclick="window.location.href = 'attributions'"  class="button">Previous</button>
-        </footer>
-      </section>
-  </body>
+    </body>
 </html>
