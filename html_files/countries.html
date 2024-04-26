@@ -3,60 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="CO2 Emissions By Country" content="A closer look at the outside factors on CO2 Emissions by country">
-    <meta <title>Countries</title>
-    <link rel="stylesheet" type="text/css" href=style.css" media="screen"/>
+    <title>Countries</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="screen"/>
     <style>
 <!--Body is overriding the layout for box, and overall css isn't working anyway-->
-        h1 {
-        font-size: 3em;
-        text-align: center;
-        }
-        box {
-        display: inline-flex;
-        flex: 4;
-        flex-direction: row;
-        justify-content: space-between;
-        clear: both;
-        }
+<!--        h1 {-->
+<!--        font-size: 3em;-->
+<!--        text-align: center;-->
+<!--        }-->
+<!--        box {-->
+<!--        display: inline-flex;-->
+<!--        flex: 4;-->
+<!--        flex-direction: row;-->
+<!--        justify-content: space-between;-->
+<!--        clear: both;-->
+<!--        }-->
 </style>
 </head>
 
 <body>
 <div class="box">
-    <div><img src="directionsto.svg" alt="Country Name One"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Two"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Three"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Four"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Five"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name One"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Two"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Three"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Four"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Five"><p>Name</p></div>
 </div>
 <br>
 <div class="box">
-    <div><img src="directionsto.svg" alt="Country Name Six"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Seven"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Eight"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Nine"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Ten"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Six"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Seven"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Eight"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Nine"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Ten"><p>Name</p></div>
 </div>
 <br>
 <div class="box">
-    <div><img src="directionsto.svg" alt="Country Name Eleven"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Twelve"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Thirteen"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Fourteen"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Fifteen"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Eleven"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Twelve"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Thirteen"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Fourteen"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Fifteen"><p>Name</p></div>
 </div>
 <br>
 <div class="box">
-    <div><img src="directionsto.svg" alt="Country Name Sixteen"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Seventeen"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Eighteen"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Nineteen"><p>Name</p></div>
-    <div><img src="directionsto.svg" alt="Country Name Twenty"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Sixteen"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Seventeen"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Eighteen"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Nineteen"><p>Name</p></div>
+    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Twenty"><p>Name</p></div>
 </div>
 <h1>Countries</h1>
 <p>Click on an Image to Explore the Details</p>
 <div class="footer">
-    <button id="Previous" type="button" onclick="window.location.href = 'view_instruct'"  class="button">Back to World Emissions</button>
+    <button id="Previous" type="button" onclick="window.location.href = 'main_illustration'"  class="button">Back to World Emissions</button>
     <button id="Enter" type="button" onclick="window.location.href = 'attributions' ; " class="button">Attributions</button>
 </div>
 </body>
