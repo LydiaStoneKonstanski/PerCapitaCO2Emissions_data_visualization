@@ -27,5 +27,9 @@ def countries():
 def attributions():
     return render_template("attributions.html")
 
+@app.route("/beautiful-web-type")
+def beautifulwebtype():
+    return render_template("beautiful-web-type")
+
 
 app.run(debug=True)
