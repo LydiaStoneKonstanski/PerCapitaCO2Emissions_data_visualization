@@ -30,7 +30,9 @@
     justify-content: space-between;
 }
 
- p {
+
+
+ .p {
            font-family: helvetica, sans-serif;
            font-size: 18px;
        }
