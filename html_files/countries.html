@@ -5,53 +5,30 @@
     <meta name="CO2 Emissions By Country" content="A closer look at the outside factors on CO2 Emissions by country">
     <title>Countries</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="screen"/>
-    <style>
-<!--Body is overriding the layout for box, and overall css isn't working anyway-->
-<!--        h1 {-->
-<!--        font-size: 3em;-->
-<!--        text-align: center;-->
-<!--        }-->
-<!--        box {-->
-<!--        display: inline-flex;-->
-<!--        flex: 4;-->
-<!--        flex-direction: row;-->
-<!--        justify-content: space-between;-->
-<!--        clear: both;-->
-<!--        }-->
-</style>
 </head>
 
 <body>
 <div class="box">
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name One"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Two"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Three"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Four"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Five"><p>Name</p></div>
-</div>
-<br>
-<div class="box">
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Six"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Seven"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Eight"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Nine"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Ten"><p>Name</p></div>
-</div>
-<br>
-<div class="box">
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Eleven"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Twelve"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Thirteen"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Fourteen"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Fifteen"><p>Name</p></div>
-</div>
-<br>
-<div class="box">
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Sixteen"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Seventeen"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Eighteen"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Nineteen"><p>Name</p></div>
-    <div><img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}" alt="Country Name Twenty"><p>Name</p></div>
+    <div><a onclick="window.location.href = 'country/Australia'"><img class='radarimg' src="{{ url_for('static', filename='radar/Australia.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Austria'"><img class='radarimg' src="{{ url_for('static', filename='radar/Austria.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Belgium'"><img class='radarimg' src="{{ url_for('static', filename='radar/Belgium.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Canada'"><img class='radarimg' src="{{ url_for('static', filename='radar/Canada.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/China'"><img class='radarimg' src="{{ url_for('static', filename='radar/China.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Czechia'"><img class='radarimg' src="{{ url_for('static', filename='radar/Czechia.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Germany'"><img class='radarimg' src="{{ url_for('static', filename='radar/Germany.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Ireland'"><img class='radarimg' src="{{ url_for('static', filename='radar/Ireland.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Japan'"><img class='radarimg' src="{{ url_for('static', filename='radar/Japan.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Kazakhstan'"><img class='radarimg' src="{{ url_for('static', filename='radar/Kazakhstan.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Libya'"><img class='radarimg' src="{{ url_for('static', filename='radar/Libya.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Malaysia'"><img class='radarimg' src="{{ url_for('static', filename='radar/Malaysia.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Netherlands'"><img class='radarimg' src="{{ url_for('static', filename='radar/Netherlands.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Norway'"><img class='radarimg' src="{{ url_for('static', filename='radar/Norway.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Poland'"><img class='radarimg' src="{{ url_for('static', filename='radar/Poland.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Saudi Arabia'"><img class='radarimg' src="{{ url_for('static', filename='radar/Saudi Arabia.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Singapore'"><img class='radarimg' src="{{ url_for('static', filename='radar/Singapore.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Turkmenistan'"><img class='radarimg' src="{{ url_for('static', filename='radar/Turkmenistan.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/United Arab Emirates'"><img class='radarimg' src="{{ url_for('static', filename='radar/United Arab Emirates.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/United States'"><img class='radarimg' src="{{ url_for('static', filename='radar/United States.svg') }}"></a></div>
 </div>
 <h1>Countries</h1>
 <p>Click on an Image to Explore the Details</p>
@@ -60,4 +37,9 @@
     <button id="Enter" type="button" onclick="window.location.href = 'attributions' ; " class="button">Attributions</button>
 </div>
 </body>
+<script>
+    function btnOnClick(username, notificationType) {
+    window.location = `/send_notification/${username}/${notificationType}`;
+}
+</script>
 </html>

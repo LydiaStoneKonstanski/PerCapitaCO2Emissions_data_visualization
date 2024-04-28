@@ -25,9 +25,19 @@ body {
     margin: auto;
     background-color: #93472f; }
 
+
+.radarimg {
+    -moz-transform:scale(0.7);
+    -webkit-transform:scale(0.7);
+    transform:scale(0.7);
+}
 .box {
-    display: flex !important;
-    justify-content: space-between !important;}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 0%;
+    vertical-align: middle;}
+
 
 
 
@@ -88,4 +98,5 @@ button {
     text-align: center;
     max-height: 50%;
 }
+
 

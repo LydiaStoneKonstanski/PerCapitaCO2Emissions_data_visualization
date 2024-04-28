@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Title Page" content="Australia">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/temp.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/wiki_infobox.css') }}"/>
+    <title>{{country}}</title>
+</head>
+<body>
+{{ sidebar | safe }}
+<h1>{{ country }}</h1>
+<div><img class='radarimg' src="{{ url_for('static', filename='radar/'+country+'.svg') }}"></div>
+<p><strong>Sidebar data for {{ country }} from <a href="{{ wiki_link }}">Wikipedia</a></strong></p>
+
+<button id="Back" type="button" onclick="window.location.href = '../countries'" class="button">Back</button>
+<p>Click to Enter</p>
+</body>
+
+</html>
