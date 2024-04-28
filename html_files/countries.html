@@ -8,6 +8,8 @@
 </head>
 
 <body>
+<h1>Countries</h1>
+<p>Click on an Image to Explore the Details</p>
 <div class="box">
     <div><a onclick="window.location.href = 'country/Australia'"><img class='radarimg' src="{{ url_for('static', filename='radar/Australia.svg') }}"></a></div>
     <div><a onclick="window.location.href = 'country/Austria'"><img class='radarimg' src="{{ url_for('static', filename='radar/Austria.svg') }}"></a></div>
@@ -30,11 +32,10 @@
     <div><a onclick="window.location.href = 'country/United Arab Emirates'"><img class='radarimg' src="{{ url_for('static', filename='radar/United Arab Emirates.svg') }}"></a></div>
     <div><a onclick="window.location.href = 'country/United States'"><img class='radarimg' src="{{ url_for('static', filename='radar/United States.svg') }}"></a></div>
 </div>
-<h1>Countries</h1>
-<p>Click on an Image to Explore the Details</p>
+
 <div class="footer">
     <button id="Previous" type="button" onclick="window.location.href = 'main_illustration'"  class="button">Back to World Emissions</button>
-    <button id="Enter" type="button" onclick="window.location.href = 'attributions' ; " class="button">Attributions</button>
+    <button id="home" type="button" onclick="window.location.href = 'index' ; " class="button">Home</button>
 </div>
 </body>
 <script>

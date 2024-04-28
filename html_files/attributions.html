@@ -4,56 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="description" content="Attributions for Visualizing CO₂ Emissions.">
         <title>Attributions</title>
-        <link href="/attributions/html_files/application.css" rel="stylesheet" type="text/css" media="screen">
-        <style>
-            h1 {
-            font-size: 5em;
-            text-align: center;
-            }
-            h2 {
-            font-size: 2;
-            text-align: center;
-            }
-<!--            p {-->
-<!--            text-align: center;-->
-<!--            }-->
-            div {
-            text-align: center;
-            }
-            body {
-            background-color: #93472f;
-            color: #222;
-            margin: 25% 0% 0% 25%;
-            text-decoration: none;
-            }
-            div {
-            height:300px;
-            width:100vw;
-            position:relative;
-            }
-            button {
-            background-color: #c7ada2
-            position:center;
-            bottom:0px;
-            }
-            wrapper {
-            min-height: 100%;
-            height: auto !important;
-            height: 100%;
-            margin: 0 auto -142px;
-<!--            the bottom margin is negative value of the footer height-->
-            }
-            footer {
-            height: 142px;
-<!--            push must be same height as footer-->
-            padding: 50px;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            }
-    </style>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
     </head>
 
     <body class="index">
@@ -69,11 +20,9 @@
     <div class="wrapper">
         <div class="push"></div>
     </div>
+
     <div class="footer">
-        <button id="Previous" type="button" onclick="window.location.href = 'countries'"  class="button">Previous</button>
-        <button id="Next" type="button" onclick="window.location.href = 'base'" class="button">Next</button>
-
+        <button id="home" type="button" onclick="window.location.href = 'index' ; " class="button">Home</button>
     </div>
-
     </body>
 </html>

@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Title Page" content="Visualizing CO₂ Emissions.">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/temp.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
     <title>Visualizing CO₂ Emissions</title>
 </head>
 
 <body>
 <p><strong>LYDIA STONE KONSTANSKI</strong></p>
 <h1>Visualizing CO₂ Emissions</h1>
-<button id="Next" type="button" onclick="window.location.href = 'view_instruct'" class="button">Enter</button>
-<p>Click to Enter</p>
+<div class="footer">
+    <button id="next" type="button" onclick="window.location.href = 'view_instruct'"  class="button">See the Legend</button>
+    <button id="attribution" type="button" onclick="window.location.href = 'attributions' ; " class="button">Attributions</button>
+
+<!--    <button id="home" type="button" onclick="window.location.href = 'index' ; " class="button">Home</button>-->
+</div>
 </body>
 
 </html>

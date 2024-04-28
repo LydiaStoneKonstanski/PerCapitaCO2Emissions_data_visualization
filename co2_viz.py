@@ -1,5 +1,7 @@
 from flask import Flask, render_template, url_for
 from markupsafe import escape
+from bs4 import BeautifulSoup
+import requests
 
 wiki_links = {
     "Australia": "https://en.wikipedia.org/wiki/Australia",
@@ -31,6 +33,7 @@ app = Flask(__name__, template_folder="html_files")
 #     return f"Hello, {escape(name)}!"
 
 @app.route("/")
+@app.route("/index")
 def index():
     return render_template("base.html")
 
@@ -60,9 +63,6 @@ def country(selected_country):
     sidebar = get_wiki_sidebar(wiki_link)
     return render_template("country.html", country=selected_country, sidebar=sidebar, wiki_link=wiki_link)
 
-# TESTING
-from bs4 import BeautifulSoup
-import requests
 
 def get_wiki_sidebar(wiki_link):
     page = requests.get(wiki_link)
