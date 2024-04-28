@@ -1,8 +1,8 @@
-/* Infobox template style */
+/* Infobox template style modified from https://lfn.wikipedia.org/wiki/Model:Infobox/styles.css */
 .infobox {
 	border: 1px solid #a2a9b1;
 	border-spacing: 3px;
-	background-color: #ADBBDA;
+	background-color: #FAF9F6;
 	color: black;
 	/* @noflip */
 	margin: 0.5em 0 0.5em 1em;
@@ -24,7 +24,7 @@
 .infobox th {
 	vertical-align: top;
 	/* @noflip */
-	text-align: left;
+	text-align: center;
 }
 .infobox.bordered {
 	border-collapse: collapse;
@@ -105,7 +105,6 @@
 	border: 0;
 	padding: 0;
 }
-
 
 /* {{pp-template}} */
 /* The width style is limited to tablet and desktop resolutions as 22em is bigger than most mobile screens.
