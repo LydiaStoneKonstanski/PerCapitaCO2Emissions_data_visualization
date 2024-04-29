@@ -23,6 +23,8 @@ h1 {
     -moz-transform:scale(1.0);
     -webkit-transform:scale(1.0);
     transform:scale(1.0);
+    background-color: lightblue;
+    border-radius: 30px;
 }
 .mainimg {
     -moz-transform:scale(0.9);
@@ -38,6 +40,16 @@ h1 {
     vertical-align: middle;}
 
 p {
+    width: 40%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+   font-family: helvetica, sans-serif;
+   font-size: 18px;}
+
+.wikiattrib {
+    padding-top: 15px;
+    padding-bottom: 15px;
    font-family: helvetica, sans-serif;
    font-size: 18px;}
 
@@ -77,6 +89,25 @@ button {
 .content {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.pullquote {
+    /*float: left;*/
+    width: 300px;
+    background: #ddf;
+    font-weight: bold;
+    padding: 13px;
+    margin: 0 13px 13px 0;
+    text-align: center;
+}
+
+.pullquote blockquote:first-letter {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 0; /* gets rid of the default blockquote margin */
 }
 
 .error {

@@ -8,10 +8,12 @@
     <title>{{country}}</title>
 </head>
 <body>
-{{ sidebar | safe }}
+<div>
+    {{ sidebar | safe }}
+</div>
 <h1>{{ country }}</h1>
 <div><img class='radarimgfull' src="{{ url_for('static', filename='radar/'+country+'.svg') }}"></div>
-<p><i>Sidebar data for {{ country }} from <a href="{{ wiki_link }}">Wikipedia</a> licensed under <a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">CC-BY-SA</a> and formatted for this page.</i></p>
+<div class="wikiattrib"><i>Sidebar data for {{ country }} from <a href="{{ wiki_link }}">Wikipedia</a> licensed under <a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">CC-BY-SA</a> and formatted for this page.</i></div>
 <div class="bottom_margin"></div>
 <div class="footer">
     <button id="previous" type="button" onclick="window.location.href = '../countries'"  class="button">Return to Country Overview</button>

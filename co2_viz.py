@@ -73,6 +73,9 @@ def get_wiki_sidebar(wiki_link):
         result = soup.find(class_="infobox ib-pol-div vcard")
 
     html = str(result).replace('href="/wiki', 'href="https://en.wikipedia.org/wiki')
+
+    # This is a workaround to provide space at bottom of table for the footer
+    html = html.replace("</tbody>", '<tr><th class="infobox-label" scope="row"> </th><td class="infobox-data"> <br></td></tr>'*5 + '</tbody>')
     return html
 
 
