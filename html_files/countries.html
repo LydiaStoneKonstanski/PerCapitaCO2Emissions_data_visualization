@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="CO2 Emissions By Country" content="A closer look at the outside factors on CO2 Emissions by country">
+    <meta name="CO₂ Emissions By Country" content="A closer look at the outside factors on CO₂ Emissions by country">
     <title>Countries</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="screen"/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+<div class="top_margin">
+</div>
 <h1>Countries</h1>
 <h2>Click on an Image to Explore the Details</h2>
 <div class="box">
-    <div><a onclick="window.location.href = 'country/Australia'"><img class='radarimg' src="{{ url_for('static', filename='radar_art/Australia.svg') }}"></a></div>
+    <div><a onclick="window.location.href = 'country/Australia'"><img class='radarimg' src="{{ url_for('static', filename='radar_art/Australia.svg') }}" width="150px" height="150px"></a></div>
     <div><a onclick="window.location.href = 'country/Austria'"><img class='radarimg' src="{{ url_for('static', filename='radar_art/Austria.svg') }}"></a></div>
     <div><a onclick="window.location.href = 'country/Belgium'"><img class='radarimg' src="{{ url_for('static', filename='radar_art/Belgium.svg') }}"></a></div>
     <div><a onclick="window.location.href = 'country/Canada'"><img class='radarimg' src="{{ url_for('static', filename='radar_art/Canada.svg') }}"></a></div>
@@ -37,6 +41,7 @@
 <div class="footer">
     <button id="Previous" type="button" onclick="window.location.href = 'main_illustration'"  class="button">Back to World Emissions</button>
     <button id="home" type="button" onclick="window.location.href = 'index' ; " class="button">Home</button>
+    <button id="attribution" type="button" onclick="window.location.href = 'attributions' ; " class="button">Attributions</button>
 </div>
 </body>
 </html>

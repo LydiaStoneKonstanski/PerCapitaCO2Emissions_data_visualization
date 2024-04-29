@@ -17,16 +17,23 @@
 <!--        }-->
 <!--</style>-->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<div class="top_margin">
+</div>
 <h1>How <i>to</i> Read <i>the</i> Visualization:</h1>
-<img src="{{ url_for('static', filename='images/IMG_5223.jpeg') }}">
+<div class="box">
+    <img class="legendimg" src="{{ url_for('static', filename='images/Viz_page_1.svg') }}">
+    <img class="legendimg" src="{{ url_for('static', filename='images/co2_viz2.svg') }}">
+    <img class="legendimg" src="{{ url_for('static', filename='images/co2_viz3.svg') }}">
+</div>
 <div class="bottom_margin"></div>
 <div class="footer">
-    <button id="next" type="button" onclick="window.location.href = 'main_illustration'"  class="button">On to World Emissions</button>
     <button id="attribution" type="button" onclick="window.location.href = 'attributions' ; " class="button">Attributions</button>
     <button id="home" type="button" onclick="window.location.href = 'index' ; " class="button">Home</button>
+    <button id="next" type="button" onclick="window.location.href = 'main_illustration'"  class="button">World Emissions</button>
 </div>
 </body>
 </html>

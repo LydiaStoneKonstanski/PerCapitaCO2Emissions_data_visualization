@@ -5,39 +5,28 @@
     <meta name="World CO₂ Emissions" content="A beautiful graph of world co₂ emissions">
     <title>World CO₂ Emissions</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
-* {box-sizing: border-box;}
-
-.img-magnifier-container {
-  position:relative;
-}
-
-.img-magnifier-glass {
-  position: absolute;
-  border: 3px solid #000;
-  border-radius: 50%;
-  cursor: none;
-  /*Set the size of the magnifier glass:*/
-  width: 200px;
-  height: 200px;
-  z-index: 3;
-  background-color: lightblue;
-}
-</style>
+        * {box-sizing: border-box;}
+    </style>
 
 </head>
 
 <body>
+<div class="top_margin"></div>
 <h1>World CO₂ Emissions</h1>
+<div class="top_margin"></div>
 <div class="img-magnifier-container">
-<img class="mainimg" id="mainimg" src="{{ url_for('static', filename='images/emissions3midway.svg') }}">
+<img class="mainimg" id="mainimg" src="{{ url_for('static', filename='images/Main_co2_viz.svg') }}">
 </div>
 <p>This chart illustrates the 20 countries with the highest CO₂ emissions per capita and populations equal to or greater than 5 million are pictured. They appear in ranked order by population and gdp.</p>
 
 <div class="box">
 <aside class="pullquote">
     <blockquote>
-    Some countries have a smooth decline in per capita emissions, whereas in others CO₂ emissions have yet to find their threshold. Can you make an educated guess why?
+    Some countries have a smooth decline in per capita emissions, <br>
+        whereas in others CO₂ emissions have yet to find their threshold. <br>
+        Can you make an educated guess why?
     </blockquote>
 </aside>
 <aside class="pullquote">
@@ -50,9 +39,10 @@
 <p>Some nations have puzzling shapes. To explore them in detail, continue to the next chapter.</p>
 <div class="bottom_margin"></div>
 <div class="footer">
-    <button id="previous" type="button" onclick="window.location.href = 'view_instruct'"  class="button">Back to the Legend</button>
-    <button id="next" type="button" onclick="window.location.href = 'countries'"  class="button">Explore Countries</button>
+    <button id="previous" type="button" onclick="window.location.href = 'view_instruct'"  class="button">Legend</button>
     <button id="home" type="button" onclick="window.location.href = 'index' ; " class="button">Home</button>
+    <button id="next" type="button" onclick="window.location.href = 'countries'"  class="button">Explore Countries</button>
+
 </div>
 </body>
 <script>
