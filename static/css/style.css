@@ -24,6 +24,12 @@ h1 {
     -webkit-transform:scale(1.0);
     transform:scale(1.0);
 }
+.mainimg {
+    -moz-transform:scale(0.9);
+    -webkit-transform:scale(0.9);
+    transform:scale(0.9);
+    background-color: lightblue;
+}
 .box {
     display: flex;
     flex-wrap: wrap;
@@ -77,7 +83,9 @@ button {
     border-bottom: 1px solid black;
     margin-top: 20px;
 }
-
+.bottom_margin {
+    height: 100px;
+}
 .footer {
     background-color: #f8f9fa;
     color: #333;

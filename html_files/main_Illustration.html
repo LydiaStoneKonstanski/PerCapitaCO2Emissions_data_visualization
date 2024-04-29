@@ -9,13 +9,14 @@
 
 <body>
 <h1>World CO₂ Emissions</h1>
-<img src="directionsto.svg" alt="Description for image" width="250" height="250">
+<img class="mainimg" src="{{ url_for('static', filename='images/emissions3midway.svg') }}">
 <p>This chart illustrates the 20 countries with the highest co₂ emissions per capita and populations equal to or greater than 5 million are pictured. They appear in ranked order by population and gdp.</p>
 <ul>
     <li>Some countries have a smooth decline in per capita emissions, whereas in others co₂ emissions have yet to find their threshold. Can you make an educated guess why?</li>
     <li>What happened to emissions in 2020?</li>
 </ul>
-<p>Some nations have puzzling shapes. To explore them in detail, continue to the next chapter:</p>
+<p>Some nations have puzzling shapes. To explore them in detail, continue to the next chapter.</p>
+<div class="bottom_margin"></div>
 <div class="footer">
     <button id="previous" type="button" onclick="window.location.href = 'view_instruct'"  class="button">Back to the Legend</button>
     <button id="next" type="button" onclick="window.location.href = 'countries'"  class="button">Explore Countries</button>
