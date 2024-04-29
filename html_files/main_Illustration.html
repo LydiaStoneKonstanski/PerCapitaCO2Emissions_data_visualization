@@ -5,11 +5,33 @@
     <meta name="World CO₂ Emissions" content="A beautiful graph of world co₂ emissions">
     <title>World CO₂ Emissions</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
+    <style>
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 200px;
+  height: 200px;
+  z-index: 3;
+  background-color: lightblue;
+}
+</style>
+
 </head>
 
 <body>
 <h1>World CO₂ Emissions</h1>
-<img class="mainimg" src="{{ url_for('static', filename='images/emissions3midway.svg') }}">
+<div class="img-magnifier-container">
+<img class="mainimg" id="mainimg" src="{{ url_for('static', filename='images/emissions3midway.svg') }}">
+</div>
 <p>This chart illustrates the 20 countries with the highest CO₂ emissions per capita and populations equal to or greater than 5 million are pictured. They appear in ranked order by population and gdp.</p>
 
 <div class="box">
@@ -33,4 +55,67 @@
     <button id="home" type="button" onclick="window.location.href = 'index' ; " class="button">Home</button>
 </div>
 </body>
+<script>
+function magnify(imgID, zoom) {
+  var img, glass, w, h, bw;
+  img = document.getElementById(imgID);
+  /*create magnifier glass:*/
+  glass = document.createElement("DIV");
+  glass.setAttribute("class", "img-magnifier-glass");
+  /*insert magnifier glass:*/
+  img.parentElement.insertBefore(glass, img);
+  /*set background properties for the magnifier glass:*/
+  glass.style.backgroundImage = "url('" + img.src + "')";
+  glass.style.backgroundRepeat = "no-repeat";
+  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+  bw = 3;
+  w = glass.offsetWidth / 2;
+  h = glass.offsetHeight / 2;
+  /*execute a function when someone moves the magnifier glass over the image:*/
+  glass.addEventListener("mousemove", moveMagnifier);
+  img.addEventListener("mousemove", moveMagnifier);
+  /*and also for touch screens:*/
+  glass.addEventListener("touchmove", moveMagnifier);
+  img.addEventListener("touchmove", moveMagnifier);
+  function moveMagnifier(e) {
+    var pos, x, y;
+    /*prevent any other actions that may occur when moving over the image*/
+    e.preventDefault();
+    /*get the cursor's x and y positions:*/
+    pos = getCursorPos(e);
+    x = pos.x;
+    x_offset = x + img.offsetLeft
+    y = pos.y;
+    /*prevent the magnifier glass from being positioned outside the image:*/
+    if (x_offset > img.offsetLeft + img.width - (w / zoom) || x_offset < img.offsetLeft + w / zoom || y > img.height - (h / zoom) || y < h / zoom) {glass.style.visibility = "hidden";} else { glass.style.visibility = "visible";}
+    if (x_offset > img.offsetLeft + img.width - (w / zoom)) {x_offset = img.offsetLeft + img.width - (w / zoom); x = img.width - (w / zoom);}
+    if (x_offset < img.offsetLeft + w / zoom) {x_offset = img.offsetLeft + w / zoom; x = w / zoom; }
+    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom); }
+    if (y < h / zoom) {y = h / zoom; }
+    /*set the position of the magnifier glass:*/
+    glass.style.left = (x_offset - w) + "px";
+    glass.style.top = (y - h) + "px";
+    /*display what the magnifier glass "sees":*/
+    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /*get the x and y positions of the image:*/
+    a = img.getBoundingClientRect();
+    /*calculate the cursor's x and y coordinates, relative to the image:*/
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /*consider any page scrolling:*/
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+</script>
+<script>
+/* Execute the magnify function: */
+magnify("mainimg", 3);
+/* Specify the id of the image, and the strength of the magnifier glass: */
+</script>
 </html>

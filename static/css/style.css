@@ -2,6 +2,7 @@
 :root {
     --main-bg-color: #ADBBDA;
     --footer-bg-color: #f8f9fa;
+    --homeimg-bg-color: #ADBBDA;
     --graph-bg-color: lightblue;
     --accent-bg-color: lightblue;
     --pullquote-bg-color: #ddf;
@@ -33,6 +34,11 @@ h1 {
     transform:scale(0.7);
 }
 
+.homeimg {
+    width: 30%;
+    background-color: var(--homeimg-bg-color);
+    border-radius: 30px;
+}
 .radarimgfull {
     -moz-transform:scale(1.0);
     -webkit-transform:scale(1.0);
@@ -46,6 +52,7 @@ h1 {
     transform:scale(0.9);
     background-color: var(--graph-bg-color);
     border-radius: 30px;
+    z-index: 1;
 }
 .box {
     display: flex;
