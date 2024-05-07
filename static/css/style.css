@@ -18,11 +18,12 @@ body {
     text-align: center;
     font-family: 'Libre Baskerville';
     font-size: 22px;
-    line-height 24px
+    line-height 24px;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     margin: 0% 0% 0% 0%;
     }
+
 
 h1 {
    font: 800 64px/64px 'Libre Baskerville', serif;
@@ -31,6 +32,7 @@ h1 {
    text-transform: uppercase;
    background-color: var(--main-bg-color);
     }
+
 p {
     width: 40%;
     margin: auto;

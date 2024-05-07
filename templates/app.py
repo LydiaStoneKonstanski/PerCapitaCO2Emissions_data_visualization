@@ -1,6 +1,6 @@
 from flask import render_template, redirect, request
 from flask_mysqldb import MySQL
-from . import create_app
+from import create_app
 #TODO from co2.models import...
 
 app = create_app()
