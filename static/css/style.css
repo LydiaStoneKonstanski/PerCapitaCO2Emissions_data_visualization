@@ -1,15 +1,15 @@
 /*Global style variables */
 :root {
-    --main-bg-color: #FFE9D6;
-    --footer-bg-color: #FFE9D6;
-    --homeimg-bg-color: #FFE9D6;
-    --graph-bg-color: lightblue;
-    --accent-bg-color: lightblue;
-    --pullquote-bg-color: lightblue;
-    --wiki-bg-color: lightblue;
+    --main-bg-color: #f2e5d3;
+    --footer-bg-color: #f2e5d3;
+    --homeimg-bg-color: #f2e5d3;
+    --graph-bg-color: #6f927f;
+    --accent-bg-color: #6f927f;
+    --pullquote-bg-color: #6f927f;
+    --wiki-bg-color: #6f927f;
 
-    --main-text-color: #3D52A0;
-    --button-text-color: #FFE9D6;
+    --main-text-color: #3b15229;
+    --button-text-color: #f2e5d3;
 
     --co2-color: #882F36; /* Not currently used as variable, here for reference*/
 }
