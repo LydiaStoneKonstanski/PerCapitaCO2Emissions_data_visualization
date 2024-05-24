@@ -3,7 +3,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#6F927F;stroke:#A96255;stroke-width:15;stroke-miterlimit:10;}
+	.st0{fill:#6F927F;}
 	.st1{fill:url(#SVGID_1_);}
 	.st2{fill:#F2E5D3;}
 	.st3{font-family:'Mestiza-Bold';}
@@ -18,8 +18,7 @@
 	.st12{font-family:'Mestiza-RegularItalic';}
 	.st13{font-size:27.4545px;}
 </style>
-<path class="st0" d="M1826.1,1072.35H93.31c-47,0-85.11-38.1-85.11-85.11V92.46c0-47,38.1-85.11,85.11-85.11H1826.1
-	c47,0,85.11,38.1,85.11,85.11v894.79C1911.21,1034.25,1873.1,1072.35,1826.1,1072.35z"/>
+<rect x="2" y="-4" class="st0" width="1916.21" height="1086.35"/>
 <radialGradient id="SVGID_1_" cx="963.5475" cy="614.5762" r="66.2065" gradientTransform="matrix(0.9991 0 0 1.0004 0.8946 -0.2333)" gradientUnits="userSpaceOnUse">
 	<stop  offset="0" style="stop-color:#FFFFFF"/>
 	<stop  offset="0" style="stop-color:#FEF5EF"/>

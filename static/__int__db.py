@@ -6,7 +6,6 @@ import mysql.connector
 
 
 basedir = path.abspath(path.dirname(__file__))
-#TODO is the below important?
 #load_dotenv(path.join(basedir, '.env'))
 
 class Config:
