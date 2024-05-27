@@ -3,14 +3,12 @@
     --main-bg-color: #f2e5d3;
     --footer-bg-color: #f2e5d3;
     --homeimg-bg-color: #f2e5d3;
-    --graph-bg-color: #6f927f;
+    --graph-bg-color: #f2e5d3;
     --accent-bg-color: #6f927f;
-    --pullquote-bg-color: #6f927f;
+    --pullquote-bg-color: #f6bc8c;
     --wiki-bg-color: #6f927f;
-
     --main-text-color: #3b15229;
     --button-text-color: #f2e5d3;
-
     --co2-color: #882F36; /* Not currently used as variable, here for reference*/
 }
 
@@ -86,6 +84,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
     padding-left: 0%;
     vertical-align: middle;
     background-color: var(--main-bg-color);
@@ -108,9 +107,14 @@ p {
   font-style: italic;
 }
 
+.country-link {
+  margin-top: 100px;
+  background-color: var(--main-bg-color);
+}
+
 .wikiattrib {
-    padding-top: 15px;
-    padding-bottom: 15px;
+   padding-top: 15px;
+   padding-bottom: 15px;
    font-family: helvetica, sans-serif;
    font-size: 18px;}
 
