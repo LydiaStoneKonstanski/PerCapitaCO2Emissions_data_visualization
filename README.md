@@ -16,7 +16,10 @@ Tech stack includes: <li>Python, Pandas, Numpy, and Jupyter Notebooks for data a
 
 ### USE:
 <p>To see how the datasets were manipulated, checkout data/co2dataframes.ipynb which is heavily notated</p>
-<p>To run on localhost, fork a branch and install the requirements to run the site in your own browser from co2_viz.py</p>
+<p>To run on localhost, fork a branch and install the requirements to run the site in your own browser from co2_viz.py<br>
+To see how the illustrations were created, take a look at the MakingOf file, or [see a slideshow here:](https://docs.google.com/presentation/d/1QhRhuaHdtMQ7eFSflAnSrmhBbcEPcHa85ufnqC3Rb2Q/edit?usp=sharing) 
+</p>
+
 
 ### LICENSE:
-<p>BeatStream is licensed under the MIT License. See the LICENSE file for details.</p>
+<p>Per Capita CO2 Emissions is licensed under the MIT License. See the LICENSE file for details.</p>
