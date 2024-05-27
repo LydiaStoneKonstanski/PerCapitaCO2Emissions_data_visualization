@@ -18,44 +18,25 @@
 <div class="img-magnifier-container">
 <img class="mainimg" id="mainimg" src="{{ url_for('static', filename='images/Main_co2_viz.svg') }}">
 </div>
-<div class="box">
-<aside class="pullquote">
-    <blockquote>
-    Some countries have a smooth decline in per capita emissions, <br>
-        whereas in others CO₂ emissions have yet to find their threshold. <br>
-        Can you make an educated guess why?
-    </blockquote>
-</aside>
-<aside class="pullquote">
-    <blockquote>
-    What happened to emissions in 2020?
-    </blockquote>
-</aside>
-</div>
-
-<p>Some nations have puzzling shapes. To explore them in detail, continue to the next chapter.</p>
-
 <div class="slider">
     <div>
-        <aside class="pullquote">
+        <aside class="pullquote" style="color:#e07d45;">
             <blockquote>
                 These 20 countries:
                 <ul>
                     <li>Have highest CO₂ emissions per capita,</li><br>
-                    <li>Have populations equal to or greater than 5 million, and </li><br>
+                    <li>Have populations >= 5 million, & </li><br>
                     <li>Are ranked by population and gdp.</li>
                 </ul>
             </blockquote>
         </aside>
     </div>
-
     <div>
-        <aside class="pullquote">
+        <aside class="pullquote" style="color:#a96255;">
+                <br>
+                <br>
+                <br>
             <blockquote>
-                <br>
-                <br>
-                <br>
-                <br>
                 What happened to emissions in 2020?
                 <br>
                 <br>
@@ -65,9 +46,20 @@
             </blockquote>
         </aside>
     </div>
-
+    <div>
+        <aside class="pullquote" style="color:#e07d45;">
+                <br>
+                <br>
+            <blockquote>
+                Some countries have a smooth decline in per capita emissions, whereas in others CO₂ emissions have yet to find their threshold. <br><br>
+        Can you make an educated guess why?
+                <br>
+                <br>
+            </blockquote>
+        </aside>
+    </div>
 </div>
-
+<p>Some nations have puzzling shapes. <br>To explore them in detail, continue to the next chapter.</p>
 <div class="bottom_margin"></div>
 <div class="footer">
     <button id="previous" type="button" onclick="window.location.href = 'view_instruct'"  class="button">Legend</button>

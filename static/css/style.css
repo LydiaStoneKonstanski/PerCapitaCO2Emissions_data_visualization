@@ -7,7 +7,7 @@
     --accent-bg-color: #6f927f;
     --pullquote-bg-color: #f6bc8c;
     --wiki-bg-color: #6f927f;
-    --main-text-color: #3b15229;
+    --main-text-color: #e07d45;
     --button-text-color: #f2e5d3;
     --co2-color: #882F36; /* Not currently used as variable, here for reference*/
 }
@@ -29,6 +29,7 @@ h1 {
    text-align: center;
    text-transform: uppercase;
    background-color: var(--main-bg-color);
+   color: #a96255;
     }
 
 p {
@@ -39,6 +40,7 @@ p {
     font-family: 'Libre Baskerville', serif;
     font-size: 18px;
     background-color: var(--main-bg-color);
+    color: #e07d45;
     }
 
 .top_margin {
