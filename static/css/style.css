@@ -139,7 +139,7 @@ button {
 
 .pullquote {
     /*float: left;*/
-    width: 300px;
+    width: 600px;
     background: var(--pullquote-bg-color);
     font-weight: bold;
     padding: 13px;
@@ -157,7 +157,27 @@ blockquote {
     margin: 0;
 }
 
-
+.slider {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.slider > div {
+    flex-shrink: 0;
+    width: 600px;
+    height: 300px;
+}
+ul {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+li {
+    float: left;
+    min width: 200px;
+    text-align: justify;
+}
 .bottom_margin {
     height: 100px;
 }
